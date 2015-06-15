@@ -100,6 +100,12 @@ Available commands are:
 Command names can be abbreviated as long as the abbreviation is unambiguous
 ```
 
+To get detailed help for a command and what command-line options it supports, run:
+
+    istanbul help <command>
+
+(Most of the command line options are not covered in this document.)
+
 #### The `cover` command
 
     $ istanbul cover my-test-script.js -- my test args
@@ -216,6 +222,9 @@ need to clear out the coverage data directory.
     }
 ```
 
+### Coverage.json
+
+For details on the format of the coverage.json object, [see here](./coverage.json.md).
 
 ### License
 
