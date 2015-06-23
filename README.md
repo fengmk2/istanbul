@@ -1,10 +1,12 @@
 ## Istanbul - a JS code coverage tool written in JS
 
-[![Build Status](https://secure.travis-ci.org/gotwarlost/istanbul.png)](http://travis-ci.org/gotwarlost/istanbul)
-[![Dependency Status](https://gemnasium.com/gotwarlost/istanbul.png)](https://gemnasium.com/gotwarlost/istanbul)
-[![Coverage Status](https://img.shields.io/coveralls/gotwarlost/istanbul.svg)](https://coveralls.io/r/gotwarlost/istanbul?branch=master)
+[![Build Status](https://secure.travis-ci.org/fengmk2/istanbul.png)](http://travis-ci.org/fengmk2/istanbul)
+[![Dependency Status](https://gemnasium.com/fengmk2/istanbul.png)](https://gemnasium.com/fengmk2/istanbul)
+[![Coverage Status](https://img.shields.io/coveralls/fengmk2/istanbul.svg)](https://coveralls.io/r/fengmk2/istanbul?branch=harmony-0.3.x)
 
-[![NPM](https://nodei.co/npm/istanbul.png?downloads=true)](https://nodei.co/npm/istanbul/)
+[![NPM](https://nodei.co/npm/istanbul-harmony.png?downloads=true)](https://nodei.co/npm/istanbul-harmony/)
+
+**istanbul-harmony: Fork from [istanbul](https://github.com/gotwarlost/istanbul) to support harmony!**
 
 * [Features and use cases](#features)
 * [Getting started and configuration](#getting-started)
@@ -37,7 +39,7 @@ Supports the following use cases and more
 
 ### Getting started
 
-    $ npm install -g istanbul
+    $ npm install -g istanbul-harmony
 
 The best way to see it in action is to run node unit tests. Say you have a test
 script `test.js` that runs all tests for your node project without coverage.
@@ -161,7 +163,7 @@ All the features of istanbul can be accessed as a library.
 #### Instrument code
 
 ```javascript
-    var istanbul = require('istanbul');
+    var istanbul = require('istanbul-harmony');
     var instrumenter = new istanbul.Instrumenter();
 
     var generatedCode = instrumenter.instrumentSync('function meaningOfLife() { return 42; }',
@@ -171,7 +173,7 @@ All the features of istanbul can be accessed as a library.
 #### Generate reports given a bunch of coverage JSON objects
 
 ```javascript
-    var istanbul = require('istanbul'),
+    var istanbul = require('istanbul-harmony'),
         collector = new istanbul.Collector(),
         reporter = new istanbul.Reporter(),
         sync = false;
@@ -265,4 +267,3 @@ The following third-party libraries are used by this module:
 
 Since all the good ones are taken. Comes from the loose association of ideas across
 coverage, carpet-area coverage, the country that makes good carpets and so on...
-
