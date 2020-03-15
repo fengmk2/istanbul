@@ -80,7 +80,7 @@
         "esprima-fb": "latest",
         "escodegen": "1.6.x",
         "handlebars": "3.0.0",
-        "mkdirp": "0.5.x",
+        "mkdirp": "1.0.0",
         "nopt": "3.x",
         "fileset": "0.2.x",
         "which": "1.0.x",
